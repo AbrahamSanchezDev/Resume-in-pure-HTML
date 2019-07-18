@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+	<title>WorldsDev Projects</title>
+</head>
+
+<body>
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<div class="intro">
+
+		<h1 id="TitleName">Abraham Sanchez</h1>
+
+		<p>Unity 3d ,C# Developer & Video Games Fan</p>
+
+		<ul class="navBar">
+			<li><a href="../index.html" class="selectedButton">Resume</a></li>
+			<li id="selected"><a href="projects.html">Projects</a></li>
+		</ul>
+	</div>
+
+
+	<div class="projectsPage">
+		<h1>Find them All!</h1>
+		(Working in progress)
+		<p>
+			This will be a Concentration (card game) where you have to find pairs
+			<br>and when you find them all you win.
+			<br>You will be able to upload your own images and use them in the game,
+			<br>or select from a list of preset group of images.
+			<br>This is to practice and learn JavaScript,HTML and CSS.
+		</p>
+	</div>
+	<div class="projectsPage">
+		<div id="presets">
+
+		</div>
+		<br>
+		<input type="file" accept="image/*" name="image" id="fileSelector" multiple=true>
+		<hr>
+		<br>
+		<div class="output">
+
+		</div>
+		<hr>
+	</div>
+	<div class="projectsPage">
+		<div>
+			Select Images to use ,select the level of difficulty ,
+			<br>the Start Game Button will be display when you have at least two (2) images to use;
+		</div>
+		<hr>
+		<div class="inputArea">
+			Difficulty :
+			<button id="lowerLevel" style="width: 30px;height: 30px">-</button>
+
+			<label id="curLevel">4</label>
+
+			<button id="increaseLevel" style="width: 30px;height: 30px">+</button>
+
+		</div>
+		<button id="StartGame">Start Game</button>
+		<hr>
+		<label id="wonText" style="font-size: 30px">Congratulations you won!!!</label>
+	</div>
+	<div class="GridContainer">
+		<div class="GridObj" id="images"></div>
+	</div>
+	<script type="module" src="../modules/componentsHandler.js"></script>
+	<script type="module" src="projects.js">
+	</script>
+</body>
+
+</html>

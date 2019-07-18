@@ -1,0 +1,242 @@
+
+:root{
+	--bodyBg : url("../images/header-bg.jpg");
+	--introBg : url('../images/bg_3.jpg');
+	--liBg : url('../images/button_3.png');
+	--mainBg : url('../images/bg_7.png');
+	--infoListBg : url('../images/pattern.png');
+	--selected : url('../images/button_5.png');
+	--projectsBg : url('../images/bg_7_3.png');
+	--hrImage : url('../images/hr.gif');
+}
+#TitleName {
+	padding-top: 15px;
+}	 
+body {
+	background-image: var(--bodyBg);
+	background-position-y: -160px;
+	font-family:  "San Francisco","Helvetica Neue",Helvetica,Arial;
+	line-height: 1.4em;
+	font-size: 14px;
+	color: gainsboro;
+}		 
+.intro {
+	background-image: var(--introBg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-origin: content-box;
+	min-height: 50px;
+	line-height: 1.7em;
+	text-align: center;
+	font-family: cursive;
+	font-size: 100%;
+	text-decoration: orange;
+	color: white;
+}
+.navBar {
+	min-height: 20px;
+	text-align: left;
+}
+	.navBar ul {
+		height: 100%;
+	}
+	.navBar li {
+		background-image: var(--liBg);
+		background-size: 100%;
+		background-position: 50% 50%;
+		display: inline;
+		padding: 1px 10px
+	}
+	.navBar a {
+		color: #ffffff;
+		text-decoration: none;
+		font-size: 18px;
+		padding-right: 15px;
+	}
+	#myPhoto{
+		float: right;
+		width: 90px;
+		height: 100px;
+		margin-right: 10px;
+		margin-top: 7px;
+		border: rgba(214, 217, 219, 0.322) 3px solid;
+	}
+.mainBg{
+		border-radius: 15px;
+		margin: 1px 35px;
+	}	
+.infoList {
+	border: 1px white solid;
+	border-radius: 15px;
+	color: #f6efe8;
+	margin: 1px 10%;
+	background-image: var(--infoListBg);
+}	  
+	.infoList ul {
+		text-align: center;
+		list-style: none;
+	}
+.media {
+	text-align: center;
+}	  
+	.media img {
+		width: 27px;
+		height: 27px;
+	}		
+#top {
+	display: inline;
+}	 
+h2 {
+	text-align: center;
+	color: beige;
+	font-size: 13px;
+}	 
+.h2Header{
+	padding-top: 10px;
+} 
+#selected {
+	background-image: var(--selected);
+	padding: 20px
+}	
+.image_1 {
+	width: 90%;
+	height: 100px;
+	object-fit: contain;
+	 animation: fadeIn 2s; 
+}	
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+		width: 25%;
+	}
+	to{
+ 		opacity: 1; 
+		width: 100%;
+	}
+}
+@keyframes fadeInText{
+	from{
+		opacity: 0;
+	}
+	to{
+ 		opacity: 1; 
+	}
+}
+.sameLine {
+	display: inline;
+}	
+a {
+	color: gainsboro;
+	text-decoration: none;
+}	  
+.expArea {
+	border-radius: 5px;
+	text-align: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}	   
+.expObj {
+	color: gainsboro;
+	font-size: 15px;
+	padding-top: 5px;
+	text-align: center;
+	margin: 3px 5px;
+	background-color: #648ecc38;
+	border: 1px white solid;
+	border-radius: 15px;
+}	
+.expText{
+	animation: fadeInText 4s; 
+}
+hr{
+	border: 1px dotted rgba(175, 175, 175, 0.534);
+}
+.split{
+	height: 7px;
+	width: 100%;
+	background-origin: padding-box;
+	
+}
+.skills {
+	background-color: #648ecc38;
+	text-align: left;
+	padding-top:30px;		
+}	
+.skillsObj{
+	animation: fadeInText 3s; 
+}
+.skillsMain{	
+	padding-left: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-around;
+	animation: fadeIn 1s; 
+}
+.summery {
+	min-height: 100px;
+	padding-top: 5px;
+}				  
+.goals {
+	min-height: 100px;
+}		   
+.end {
+	border-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+	font-family: serif;
+}	   
+
+.GridObj{
+	padding: 10px 10px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	align-items:center;
+	justify-content: flex-start;
+	flex-basis: 10%;
+	margin: auto;
+	width: 50%;
+	 border: 1px dotted rgb(99, 99, 99);
+}
+.GridObj img{
+ cursor: pointer;
+}
+.output{
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	margin: auto;
+	border: 1px dotted rgb(99, 99, 99);
+	align-items:center;
+	justify-content: flex-start;
+}
+.projectsPage{
+	background-image: var(--projectsBg);
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-position: 0 50%;
+	background-size: 100% 100%; 
+	text-shadow: 2px 1px black;	
+	padding-top: 7px;
+	text-align: center;	
+}	
+.inputArea{
+	justify-content: center;
+	padding-bottom: 10px;	
+}
+#StartGame{
+
+	background-color: rgb(54, 54, 54);
+	color: antiquewhite;
+	height: 30px;
+	margin : auto;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+#curLevel{
+	padding: 5px 10px;
+	border: 2px solid rgba(180, 180, 180, 0.712);
+}
